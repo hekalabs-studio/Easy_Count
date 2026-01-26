@@ -170,6 +170,8 @@ function appendToDisplay(value) {
 function clearDisplay() {
    let display = document.getElementById("display");
    display.value = "";
+   display.style.color = "white";
+   display.style.fontSize = "2rem";
 }
 function calculateResult() {
    let display = document.getElementById("display");
@@ -177,8 +179,10 @@ function calculateResult() {
       let result = eval(display.value);
       display.value = result;
    } catch (error) {
-      display.value = "Error";
+      display.value = "Error (Click C to Clear)";
       display.style.color = "red";
+      display.style.fontSize = "1rem";
+
    }
 }
 
