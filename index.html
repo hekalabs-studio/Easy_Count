@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Heka - MATH</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/handphone.css" media="screen and (max-width: 1024px)">
+   <link rel="shortcut icon" href="css/img/cat-logo.png">
+</head>
+<body>
+
+   <header id="header">
+      <div class="nav1">
+         <div class="brand">Heka<span class="title">.</span></div>
+         <ul class="navigation two">
+            <li class="navLink kedua"><a href="#">About</a></li>
+            <li class="navLink kedua"><a href="#footer">Contact</a></li>
+            <li class="navLink kedua"><a href="#footer">Service</a></li>
+         </ul>
+         <div class="menu">
+            <div class="roti"></div>
+            <div class="roti"></div>
+            <div class="roti"></div>
+         </div>
+      </div>
+
+      <div class="nav_cards">
+         <ul class="navigation">
+            <li class="navLink navLink2" onclick="navLink()"><a href="#introduction">Home</a></li>
+            <li class="navLink navLink2" onclick="navLink()"><a href="#lingkaran">Lingkaran</a></li>
+            <li class="navLink navLink2" onclick="navLink()"><a href="#pythagoras">Pythagoras</a></li>
+         </ul>
+      </div>
+         
+   </header>
+
+   <main class="container">
+
+      <section id="introduction">
+
+         <div class="brandIntro">
+          <img src="img/project/cat-logo.png" alt="" class="profil">
+          <figcaption>HEKA<span style="color: var(--blue);">.</span></figcaption>
+        </div>
+        
+        <div class="perkenalan">
+          <div class="brandPerkenalan">
+            <p>Novemas <span style="color: var(--blue)">Heka</span></p>
+            <p><span style="color: var(--blue);">Alfarizi</span>.</p>
+          </div>
+          <br>
+
+          <div class="about_me">
+            <p class="desHp">
+               Aku suka dengan teknologi dan tidak ingin ketinggalan perkembangan zaman,
+                jadi aku memilih Coding dan Editing sebagai hobby ku 
+            </p>
+            <p class="desPC">
+               Aku suka dengan teknologi dan tidak ingin ketinggalan perkembangan zaman,
+               jadi aku memilih Coding dan Editing sebagai hobby ku.
+               Visual Code adalah aplikasi yang kupakai untuk Ngoding dan Davinci Resolve aplikasi editing terfavoritku ^_^
+            </p>
+            
+          </div>
+
+          <div class="medsos">
+            <div class="youtube">
+               <img src="img/sosmed/youtube.png" alt="youtube" height="25">
+               <a href="https://www.youtube.com/@Novemas12">@Novemas12 </a>
+            </div>
+            <div class="ig">
+               <img src="img/sosmed/instagram.png" alt="instagram" height="25">
+               <a href="https://www.instagram.com/novemash3kaa?igsh=MW1nMHVlb3c2OWpkbQ==">@novemash3kaa</a>
+            </div>
+            <div class="github">
+               <img src="img/sosmed/github.png" alt="github" height="25">
+               <a href="https://github.com/Novemasheka">@Novemasheka</a>
+            </div>
+          </div>
+
+         <ul class="forIntro">
+            <li class="intro"><a href="#">About</a></li>
+            <li class="intro"><a href="#footer">Contact</a></li>
+            <li class="intro"><a href="#footer">Service</a></li>
+            <li class="intro"><a href="#https://hekastore.github.io/top-up/">HekaStore</a></li>
+         </ul>
+
+        </div>
+
+
+      </section>
+
+      <section id="lingkaran">
+         <div class="vektorBundar">RUMUS<br>&nbsp;LINGKARAN</div>
+         <div class="brandRumus">
+            <h3 style="color: white;">Menghitung, </h3>
+            <h3>Luas & Keliling <span style="color: white;">lingkaran.</span></h3>
+            <figcaption>jika salah satu tidak diketahui, "jangan di isi!" </figcaption>
+            <figcaption style="color: rgb(171, 25, 25);">Satuan Centi Meter (cm) !!</figcaption>
+         </div>
+         
+         
+         <div class="rumus">
+            <div class="inputRumus">
+               <input type="number" name="diameter" id="diameter" placeholder="Diameter . . . cm">
+               <div class="jari">
+                  <input type="number" name="jari" id="jari" placeholder="Jari-jari . . . cm">
+                  <button class="count Bundar" onclick="countLingkaran()">Hitung</button>
+               </div>
+               
+            </div>
+            
+         </div>
+         
+         <div class="output">
+            <h3 style="color: #fff;text-align: center;">↓ Hasil ↓</h3>
+            <h4 id="outputBundar"></h4>
+         </div>
+         
+      </section>
+
+      <section id="pythagoras">
+         <div class="segitiga_samakaki"><span>c</span></div>
+
+         <div class="brandRumus">
+            <h3>Menghitung, </h3>
+            <h3><span style="color: white;">Garis</span> Pythagoras<span style="color: white;">.</span></h3>
+            <figcaption>jika salah satu tidak diketahui, "jangan di isi!" </figcaption>
+         </div>
+
+         <div class="rumus">
+            <div class="inputRumus">
+               <div class="rumusLebih">
+                  <input type="number" name="garisA" id="garisA" placeholder="Garis A . . . ">
+                  <input type="number" name="garisB" id="garisB" placeholder="Garis B . . . ">
+               </div>
+               
+               <div class="goras">
+                  <input type="number" name="garisC" id="garisC" placeholder="Garis C . . . ">
+                  <button class="count Bundar" onclick="countPythagoras()" style="margin-left: 10px;">Hitung</button>
+               </div>
+               
+            </div>
+         </div>
+
+         <div class="output">
+            <h3 style="color: #fff;text-align: center;">↓ Hasil ↓</h3>
+            <h4 id="outputPythagoras"></h4>
+         </div>
+
+      </section>
+
+      <section id="kalkulator">
+         <div class="brandRumus">
+            <h3>Menghitung, </h3>
+            <h3><span style="color: white;">Kalkulator</span> Sederhana<span style="color: white;">.</span></h3>
+            <figcaption>Gunakan Kalkulator ini untuk menghitung secara sederhana!</figcaption>
+         </div>
+
+         <div class="kalkulator_container">
+            <input type="text" id="display" disabled>
+            <div class="buttons_kalkulator">
+               <div class="tombol_calc baris1">
+                  <button onclick="clearDisplay()">C</button>
+                  <button onclick="appendToDisplay('kurungbuka')">(</button>
+                  <button onclick="appendToDisplay('kurungtutup')">)</button>
+                  <button onclick="appendToDisplay('/')">÷</button>
+               </div>
+               
+               <div class="tombol_calc baris2">
+                  <button onclick="appendToDisplay('7')">7</button>
+                  <button onclick="appendToDisplay('8')">8</button>
+                  <button onclick="appendToDisplay('9')">9</button>
+                  <button onclick="appendToDisplay('*')">×</button>
+               </div>
+               
+               <div class="tombol_calc baris3">
+                  <button onclick="appendToDisplay('4')">4</button>
+                  <button onclick="appendToDisplay('5')">5</button>
+                  <button onclick="appendToDisplay('6')">6</button>
+                  <button onclick="appendToDisplay('-')">−</button>
+               </div>
+               
+               <div class="tombol_calc baris4">
+                  <button onclick="appendToDisplay('1')">1</button>
+                  <button onclick="appendToDisplay('2')">2</button>
+                  <button onclick="appendToDisplay('3')">3</button>
+                  <button onclick="appendToDisplay('+')">+</button>
+               </div>
+               
+               <div class="tombol_calc baris5">
+                  <button onclick="appendToDisplay('0')">0</button>
+                  <button onclick="appendToDisplay('.')">.</button>
+                  <button onclick="calculateResult()">=</button>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer id="footer">
+
+      <div class="main_footer">
+
+         <!-- brandFooter -->
+         <div class="brand_footer">
+            <div class="profil_footer">
+               <img src="img/project/cat-logo.png" alt="" height="50" width="50">
+               <h3>Heka<span style="color: var(--blue);">.</span></h3>
+            </div>
+            <div class="deskripsi_footer">
+               <p>Website ini saya buat untuk mempermudah kalian dalam Menghitung!<br><br>
+                  Aku membuat website ini dari mulai nol tanpa tamplate dan bisa di buka di semua Device!
+               </p>
+            </div>
+            
+         </div>
+
+         <!-- contactFooter -->
+         <div class="contact_us_footer">
+            <h1>CONTACT US</h1>
+            <div class="email_footer">
+               <p>hekoding@gmail.com</p>
+               <p>Jawa Timur, Kabupaten Lumajang, Klakah, Dsn Kampung Templek RT2/RW4</p>
+               <p>+62 895 1443 3486</p>
+            </div>
+         </div>
+
+         <!-- medsosFooter -->
+         <div class="medsos_footer">
+            <h3>FOLLOW US</h3>
+            <p>YA!! Follow aku Disini ↓</p>
+            <div class="media">
+               <a href="https://www.youtube.com/@Novemas12"><img src="img/sosmed/light-ig.png" alt="instagram" height="50" width="50"></a>
+               <a href="https://www.youtube.com/@Novemas12"><img src="img/sosmed/light-yt.png" alt="youtube" height="50" width="50"></a>
+               <a href="https://github.com/Novemasheka"><img src="img/sosmed/github.png" alt="github" height="50" width="50"></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="copyright">
+         <p>©Copyright By Novemas Heka Alfarizi</p>
+      </div>
+   </footer>
+   <script src="js/script.js"></script>
+   
+</body>
+</html>
