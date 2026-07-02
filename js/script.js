@@ -165,7 +165,18 @@ function appendToDisplay(value) {
    } else {
       display.value += value;
    }
+
+   if(display.style.color == "red") {
+      display.style.color = "white"
+      display.value = value;
+      display.style.fontSize = "2rem";
+   }
       
+}
+
+function deleteList() {
+   let display = document.getElementById("display")
+   display.value = display.value.slice(0,-1);
 }
 function clearDisplay() {
    let display = document.getElementById("display");
@@ -185,4 +196,3 @@ function calculateResult() {
 
    }
 }
-
